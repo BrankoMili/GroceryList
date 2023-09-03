@@ -21,7 +21,6 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("list", JSON.stringify(itemList));
-    inputRef.current.focus();
   }, [itemList]);
 
   const showAlert = (show = false, msg = "", type = "") => {
